@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- -----------------link CSS------------------- -->
+    <link rel="stylesheet" href="index.css">
+    <!-- --------------import fontAwesome---------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Smythe&display=swap" rel="stylesheet">
+    <title>Mobile App Menu | Restaurant</title>
+</head>
+<body>
+    
+    <main id="default-sate">
+        
+
+        <header class="header-bunner">
+            <!-- <i class="fa-solid fa-toggle-on" id="theme-toggle"></i> -->
+            <!-- <img src="/image/header.png" alt="picture of bugger"> -->
+        </header>
+        <div class="item-container" id="items-container">
+
+        </div>
+
+        <div class="checkout-container">
+            <h2>Your order</h2>
+            <div class="added-menu" id="added-menus">
+                <!-- Added menu items will be displayed here -->
+            </div>
+            <div class="total-menu">
+                <p>Total Price:</p>
+                <span id="total-price">$</span>
+            </div>
+            <button id="complete-order-btn">Complete Order</button>
+        </div>
+        <div class="payment-modal" >
+            <h3>Enter Card details</h3>
+            <form id="payment-form">
+                <input type="text"
+                 name="full-name" 
+                 id="full-name"
+                  placeholder="Enter your name"
+                  required>
+
+                <input type="text"
+                 name="card-number"
+                  id="card-number"
+                   placeholder="Enter your card number"
+                   
+                   required>
+
+                <input type="text"
+                 name="cvv"
+                  id="card-cvv"
+                   placeholder="Enter CVV"
+                   required>
+
+                <button type="submit" id="payment-btn">pay</button>
+            </form>
+        </div>
+        <div class="thanks-container">
+        </div>
+    </main>
+
+
+
+<!-- ----------script Js------------ -->
+ <script src="index.js" type="module"></script>
+
+</body>
+</html>
+
